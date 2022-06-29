@@ -8,7 +8,7 @@
 body {
   background-color: hsl(30, 38%, 92%);
   font-family: 'Montserrat', sans-serif;
-  max-width: 400px;
+  max-width: 500px;
   font-size: 14px;
   width: 100%;
   margin: 0 auto;
@@ -20,17 +20,87 @@ img {
 p {
   color: hsl(228, 12%, 48%);
   font-weight: 100;
+  text-align: left;
 }
 h1 {
   font-family: 'Fraunces', monospace;
   font-weight: 700;
+  margin: 1rem 0;
 }
+button {
+  background-color: hsl(158, 36%, 37%);
+  width: 90%;
+  color: hsl(0, 0%, 100%);
+  padding: 1.25rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  border: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px 3px hsl(212, 21%, 14%);
+          box-shadow: 5px 5px 5px 3px hsl(212, 21%, 14%);
+}
+button:hover {
+  background-color: hsl(228, 12%, 48%);
+}
+/* Variables */
 .card {
   margin: 2rem 2rem;
 }
 .card-content {
   background-color: hsl(0, 0%, 100%);
   width: 90%;
-  padding: 1rem 1.2rem;
+  padding: 1.5rem 1.2rem;
   margin: -1rem 0;
+}
+.type-articles {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0.6rem 0;
+}
+.descript-articles {
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+.prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+.price-element1 {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 2rem;
+}
+.button {
+  text-align: center;
+}
+@media (min-width: 1080px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+  }
+  img {
+    background-image: url('/assets/img/image-product-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: -1rem -2rem -1rem 0rem;
+  }
+  .button {
+    text-align: center;
+  }
 }
