@@ -1,0 +1,36 @@
+/* Generales */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+  max-width: 400px;
+  font-size: 14px;
+  width: 100%;
+  margin: 0 auto;
+}
+img {
+  width: 90%;
+  border-radius: 3%;
+}
+p {
+  color: hsl(228, 12%, 48%);
+  font-weight: 100;
+}
+h1 {
+  font-family: 'Fraunces', monospace;
+  font-weight: 700;
+}
+.card {
+  margin: 2rem 2rem;
+}
+.card-content {
+  background-color: hsl(0, 0%, 100%);
+  width: 90%;
+  padding: 1rem 1.2rem;
+  margin: -1rem 0;
+}
